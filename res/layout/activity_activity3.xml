@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activity3" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity3" />
+
+    <Button
+        android:id="@+id/butReaColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp"
+        android:onClick="setRedColor"
+        android:text="Красный" />
+
+    <Button
+        android:id="@+id/butBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/butReaColor"
+        android:layout_alignBottom="@+id/butReaColor"
+        android:layout_toRightOf="@+id/butReaColor"
+        android:onClick="setBlueColor"
+        android:text="Синий" />
+
+    <Button
+        android:id="@+id/Activity3butClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butBlue"
+        android:layout_toRightOf="@+id/butReaColor"
+        android:onClick="Activity3butClose"
+        android:text="Закрыть" />
+
+    <Button
+        android:id="@+id/butGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/butBlue"
+        android:layout_alignBottom="@+id/butBlue"
+        android:layout_toRightOf="@+id/butBlue"
+        android:onClick="setGreenColor"
+        android:text="Зеленный" />
+
+    <Button
+        android:id="@+id/AC3_butAddFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTest"
+        android:layout_below="@+id/butReaColor"
+        android:onClick="UpFont"
+        android:text="Увеличить" />
+
+    <TextView
+        android:id="@+id/tvTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/butReaColor"
+        android:layout_below="@+id/AC3_butAddFont"
+        android:layout_marginTop="27dp"
+        android:text="Пример текста (Sample)" />
+
+    <Button
+        android:id="@+id/AC3_butDownFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvTest"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/AC3_butAddFont"
+        android:onClick="DownFont"
+        android:text="Уменьшить" />
+
+</RelativeLayout>
